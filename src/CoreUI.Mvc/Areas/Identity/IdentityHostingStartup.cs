@@ -19,8 +19,7 @@ namespace CoreUI.Mvc.Areas.Identity
 
                 services.AddMvc()
                     .AddRazorPagesOptions(options =>
-                    {
-                        options.AllowAreas = true;
+                    { 
                         options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
                         options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
                     });
